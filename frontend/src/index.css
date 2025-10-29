@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Inter", "sans-serif";
+  --breakpoint-3xl: 1920px;
+  --color--primary: #ff9324;
+}
+
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+
+@layer base {
+  html {
+    font-family: var(--font-display);
+  }
+}
+
+body {
+  background-origin: #fcfbfc;
+}
+
+/* Icon button size & spacing */
+.w-md-editor-toolbar li > button {
+  height: 40px !important;
+  font-size: 24px !important;
+  color: #4a5568 !important;
+  padding: 10px !important;
+}
+
+/* Hover effect */
+.w-md-editor-toolbar button:hover {
+  color: #9852e4 !important;
+  background-color: #e9d4ff !important;
+  border-radius: 6px;
+}
+
+/* Active/focused icon style */
+.w-md-editor-toolbar button:focus {
+  outline: none;
+  color: #007a99 !important;
+  background-color: #d0f4ff !important;
+}
